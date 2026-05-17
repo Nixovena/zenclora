@@ -68,39 +68,18 @@
         </div>
     </header>
 
-    <!-- ZPM Section - with image (FIRST - Main Feature) -->
+    <!-- ZPM Section - Package Manager -->
     <section id="zpm" class="zpm-section">
         <div class="section-content">
-            <div class="zpm-visual">
-                <img src="Assets/zpm.png" alt="ZPM Package Manager" class="zpm-image">
+            <div class="zpm-visual" style="flex: 1.2;">
+                <div class="zpm-screenshot-preview" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); border: 1px solid var(--glass-border); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--pastel-mint)'; this.style.boxShadow='0 20px 50px rgba(184, 228, 216, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.2)';">
+                    <img src="Assets/zpm-ss1.png" alt="ZPM Package Manager" style="width: 100%; display: block; object-fit: cover;">
+                </div>
             </div>
-            <div class="zpm-info">
+            <div class="zpm-info" style="flex: 1;">
                 <span class="section-badge">Package Manager</span>
                 <h2>ZPM - <span class="gradient-text">Zen Package Manager</span></h2>
                 <p class="section-subtitle">Install Anything. Manage Everything. Simple Commands.</p>
-                <div class="terminal-preview">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">Zen Package Manager</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command typing" id="typingCommand">sudo zen install steam</span>
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Adding repository...
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Installing Steam...
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> <span class="highlight-green">Complete!</span>
-                        </div>
-                    </div>
-                </div>
                 <div class="zpm-packages">
                     <span class="package-tag"><i class="fab fa-steam"></i> Steam</span>
                     <span class="package-tag"><i class="fab fa-spotify"></i> Spotify</span>
@@ -115,36 +94,43 @@
         </div>
     </section>
 
-    <!-- ZPM System Section -->
-    <section id="zpm-system" class="zpm-system-section">
+    <!-- ZPM Section - Zenthub -->
+    <section id="zenthub" class="zpm-system-section">
         <div class="section-content zpm-system-content">
-            <div class="zpm-info">
-                <span class="section-badge">System Management</span>
-                <h2><span class="gradient-text">System Utilities</span></h2>
-                <p class="section-subtitle">Powerful system management at your fingertips.</p>
-                <div class="terminal-preview">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">Zen System</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command">sudo zen system optimize</span>
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Syncing filesystem...
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Clearing memory caches...
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> <span class="highlight-green">System Optimized!</span>
-                        </div>
-                    </div>
+            <div class="zpm-info" style="flex: 1;">
+                <span class="section-badge">App Store</span>
+                <h2>Zenthub - <span class="gradient-text">Flatpak Store</span></h2>
+                <p class="section-subtitle">Discover and install flatpak applications with a beautiful CLI interface.</p>
+                <div class="zpm-packages">
+                    <span class="package-tag"><i class="fas fa-search"></i> Search Apps</span>
+                    <span class="package-tag"><i class="fas fa-download"></i> Install</span>
+                    <span class="package-tag"><i class="fas fa-sync-alt"></i> Update</span>
+                    <span class="package-tag"><i class="fas fa-trash"></i> Remove</span>
                 </div>
+                <a href="docs.html#zenthub" class="btn btn-primary">
+                    <i class="fas fa-store"></i> View Store Details
+                </a>
+            </div>
+            <div class="zpm-visual" style="flex: 1.2;">
+                <div class="zpm-screenshot-preview" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); border: 1px solid var(--glass-border); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--pastel-mint)'; this.style.boxShadow='0 20px 50px rgba(184, 228, 216, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.2)';">
+                    <img src="Assets/zpm-ss2.png" alt="Zenthub Flatpak Store" style="width: 100%; display: block; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ZPM Section - System Utilities -->
+    <section id="zpm-system" class="zpm-tools-section">
+        <div class="section-content">
+            <div class="zpm-visual" style="flex: 1.2;">
+                <div class="zpm-screenshot-preview" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); border: 1px solid var(--glass-border); transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--pastel-mint)'; this.style.boxShadow='0 20px 50px rgba(184, 228, 216, 0.2)';" onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='var(--glass-border)'; this.style.boxShadow='0 15px 40px rgba(0, 0, 0, 0.2)';">
+                    <img src="Assets/zpm-ss3.png" alt="System Utilities" style="width: 100%; display: block; object-fit: cover;">
+                </div>
+            </div>
+            <div class="zpm-info" style="flex: 1;">
+                <span class="section-badge">System Utilities</span>
+                <h2>Zen <span class="gradient-text">System Utilities</span></h2>
+                <p class="section-subtitle">Powerful system management at your fingertips. Optimize, configure, and monitor.</p>
                 <div class="zpm-packages">
                     <span class="package-tag"><i class="fas fa-network-wired"></i> DNS Config</span>
                     <span class="package-tag"><i class="fas fa-memory"></i> ZRAM</span>
@@ -154,54 +140,6 @@
                 </div>
                 <a href="docs.html#system" class="btn btn-primary">
                     <i class="fas fa-sliders-h"></i> View System Commands
-                </a>
-            </div>
-            <div class="zpm-visual">
-                <img src="Assets/zpm2.png" alt="ZPM System Utilities" class="zpm-image">
-            </div>
-        </div>
-    </section>
-
-    <!-- ZPM Tools Section -->
-    <section id="zpm-tools" class="zpm-tools-section">
-        <div class="section-content">
-            <div class="zpm-visual">
-                <img src="Assets/zpm3.png" alt="ZPM Tools" class="zpm-image">
-            </div>
-            <div class="zpm-info">
-                <span class="section-badge">Utility Tools</span>
-                <h2><span class="gradient-text">Zen Tools</span></h2>
-                <p class="section-subtitle">Essential utilities for everyday tasks.</p>
-                <div class="terminal-preview">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">Zen Tools</span>
-                    </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command">sudo zen tools formatusb</span>
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Device: /dev/sdb (16GB)
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> Formatting with FAT32...
-                        </div>
-                        <div class="terminal-output">
-                            <span class="success">✓</span> <span class="highlight-green">USB Ready!</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="zpm-packages">
-                    <span class="package-tag"><i class="fab fa-usb"></i> USB Format</span>
-                    <span class="package-tag"><i class="fas fa-box"></i> DEB Install</span>
-                    <span class="package-tag"><i class="fas fa-folder-open"></i> File Manager</span>
-                </div>
-                <a href="docs.html#tools" class="btn btn-primary">
-                    <i class="fas fa-wrench"></i> View All Tools
                 </a>
             </div>
         </div>
@@ -410,8 +348,9 @@
                 <span>Zenclora OS</span>
             </div>
             <div class="footer-links">
-                <a href="https://github.com/Zenclora" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/root0emir" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/nixovena" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/nixovena" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@nixovena" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://sourceforge.net/projects/zenclora/" target="_blank"><i class="fas fa-download"></i></a>
             </div>
             <p>© 2026 Zenclora Linux Project. All rights reserved.</p>

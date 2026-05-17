@@ -39,6 +39,60 @@
         <!-- Current Release -->
         <div class="release-item current">
             <div class="release-header">
+                <span class="version-badge">v3.0 "SpiritBlossom"</span>
+                <span class="release-date">May 18, 2026</span>
+            </div>
+            <h3>MATE Desktop & ZPM Mega Update</h3>
+            <div class="changelog">
+                <h4>System & Desktop:</h4>
+                <ul>
+                    <li><i class="fas fa-desktop"></i> Added <strong>MATE Desktop Environment</strong> as an alternative
+                        to Gnome. It is highly customized and integrated with Conky.</li>
+                    <li><i class="fas fa-microchip"></i> Kernel configurations updated for further performance
+                        improvements.</li>
+                    <li><i class="fas fa-bug"></i> Fixed an issue where language settings were not automatically
+                        activated after system installation.</li>
+                    <li><i class="fas fa-image"></i> Added new high-quality wallpapers.</li>
+                </ul>
+                <h4>ZPM (Zen Package Manager) Overhaul:</h4>
+                <ul>
+                    <li><i class="fas fa-code"></i> Completely redesigned and rewritten from bash to
+                        <strong>Python3</strong>.</li>
+                    <li><i class="fas fa-globe"></i> Added translation support for 12 different languages.</li>
+                    <li><i class="fas fa-paint-brush"></i> The user interface has been built entirely from scratch.</li>
+                    <li><i class="fas fa-mouse-pointer"></i> Added a desktop shortcut for easy access to the Zen Package
+                        Manager.</li>
+                    <li><i class="fas fa-box-open"></i> Huge list of new packages added: <code>winehq</code>,
+                        <code>floorp</code>, <code>brave-beta</code>, <code>brave-nightly</code>,
+                        <code>brave-origin-beta</code>, <code>brave-origin-nightly</code>, <code>mullvad-browser</code>,
+                        <code>jellyfin</code>, <code>signal</code>, <code>teams-for-linux</code>,
+                        <code>mattermost</code>, <code>vencord</code>, <code>waydroid</code>, <code>rust</code>,
+                        <code>docker</code>, <code>vscodium</code>, <code>sublime-text</code>,
+                        <code>nvidia-docker</code>, <code>ardunio</code>, <code>r-project</code>, <code>temurbin</code>,
+                        <code>anydesk</code>, <code>claude</code>, and <code>virtualbox</code>.</li>
+                    <li><i class="fas fa-trash-alt"></i> Removed <code>librewolf</code> due to extrepo repository
+                        issues.</li>
+                </ul>
+                <h4>New ZPM Tools & Features:</h4>
+                <ul>
+                    <li><i class="fas fa-robot"></i> <strong>Zen AI</strong>: Manage local and online AI models with
+                        <code>ollama</code>, <code>toolkit</code>, <code>apichat</code>, and <code>llmstore</code>.</li>
+                    <li><i class="fas fa-shield-alt"></i> <strong>Zen Security</strong>: New tools including
+                        <code>jails</code> (Firejail manager), <code>usbguard</code>, <code>checksum</code>, and an
+                        NFTables-based <code>firewall</code>.</li>
+                    <li><i class="fas fa-store"></i> <strong>Zenthub</strong>: A brand new Python3 Rich CLI-based
+                        Flatpak software center.</li>
+                    <li><i class="fas fa-terminal"></i> <strong>Zen ZPT</strong>: A new apt frontend with a beautiful
+                        CLI UI and detailed messages.</li>
+                    <li><i class="fas fa-cog"></i> <strong>Zen Settings</strong>: New utilities for language
+                        configuration and <code>hostname</code> changes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Previous Release -->
+        <div class="release-item">
+            <div class="release-header">
                 <span class="version-badge">v2.6 "Ardenweald"</span>
                 <span class="release-date">March 27, 2026</span>
             </div>
@@ -46,9 +100,12 @@
             <div class="changelog">
                 <h4>Hardware & Drivers:</h4>
                 <ul>
-                    <li><i class="fas fa-microchip"></i> Resolved <strong>driver conflict issues</strong> introduced in the v2.5 update.</li>
-                    <li><i class="fas fa-wifi"></i> Fixed an issue where the <strong>Intel WIFI Driver</strong> was failing to initialize.</li>
-                    <li><i class="fas fa-shield-alt"></i> General system stability improvements and minor bug fixes.</li>
+                    <li><i class="fas fa-microchip"></i> Resolved <strong>driver conflict issues</strong> introduced in
+                        the v2.5 update.</li>
+                    <li><i class="fas fa-wifi"></i> Fixed an issue where the <strong>Intel WIFI Driver</strong> was
+                        failing to initialize.</li>
+                    <li><i class="fas fa-shield-alt"></i> General system stability improvements and minor bug fixes.
+                    </li>
                 </ul>
             </div>
         </div>
@@ -63,13 +120,17 @@
             <div class="changelog">
                 <h4>User Interface & Experience:</h4>
                 <ul>
-                    <li><i class="fas fa-desktop"></i> Implemented several adjustments focused on enhancing the <strong>desktop user experience</strong>.</li>
-                    <li><i class="fas fa-gauge-high"></i> Added a real-time <strong>system resource monitor</strong> to the top panel, displaying CPU and memory usage status.</li>
+                    <li><i class="fas fa-desktop"></i> Implemented several adjustments focused on enhancing the
+                        <strong>desktop user experience</strong>.</li>
+                    <li><i class="fas fa-gauge-high"></i> Added a real-time <strong>system resource monitor</strong> to
+                        the top panel, displaying CPU and memory usage status.</li>
                 </ul>
                 <h4>Hardware & Drivers:</h4>
                 <ul>
-                    <li><i class="fas fa-microchip"></i> Significantly expanded <strong>driver support</strong> for a wider range of hardware.</li>
-                    <li><i class="fas fa-cogs"></i> Improved overall <strong>hardware compatibility</strong> across various systems.</li>
+                    <li><i class="fas fa-microchip"></i> Significantly expanded <strong>driver support</strong> for a
+                        wider range of hardware.</li>
+                    <li><i class="fas fa-cogs"></i> Improved overall <strong>hardware compatibility</strong> across
+                        various systems.</li>
                 </ul>
             </div>
         </div>
@@ -84,10 +145,14 @@
             <div class="changelog">
                 <h4>Core Improvements:</h4>
                 <ul>
-                    <li><i class="fas fa-microchip"></i> Resolved critical installer issues appearing with <strong>Debian 13.4</strong>.</li>
-                    <li><i class="fas fa-shield-alt"></i> Fixed the issue where the <code>sudo</code> command was missing in the installed system after using the System Installer.</li>
-                    <li><i class="fas fa-wrench"></i> Squashed several minor bugs in <strong>Zen Package Manager (ZPM)</strong> for a more reliable experience.</li>
-                    <li><i class="fas fa-terminal"></i> ZPM can now be invoked using both <code>zen</code> and <code>zpm</code> commands.</li>
+                    <li><i class="fas fa-microchip"></i> Resolved critical installer issues appearing with
+                        <strong>Debian 13.4</strong>.</li>
+                    <li><i class="fas fa-shield-alt"></i> Fixed the issue where the <code>sudo</code> command was
+                        missing in the installed system after using the System Installer.</li>
+                    <li><i class="fas fa-wrench"></i> Squashed several minor bugs in <strong>Zen Package Manager
+                            (ZPM)</strong> for a more reliable experience.</li>
+                    <li><i class="fas fa-terminal"></i> ZPM can now be invoked using both <code>zen</code> and
+                        <code>zpm</code> commands.</li>
                 </ul>
             </div>
         </div>
@@ -194,8 +259,9 @@
                 <span>Zenclora OS</span>
             </div>
             <div class="footer-links">
-                <a href="https://github.com/Zenclora" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/root0emir" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/nixovena" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/nixovena" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@nixovena" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://sourceforge.net/projects/zenclora/" target="_blank"><i class="fas fa-download"></i></a>
             </div>
             <p>© 2026 Zenclora Linux Project. All rights reserved.</p>

@@ -34,6 +34,7 @@
             <h3>Navigation</h3>
             <ul>
                 <li><a href="#about">What is it?</a></li>
+                <li><a href="#desktops">Desktop Editions</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#requirements">System Requirements</a></li>
                 <li><a href="#installation">Installation</a></li>
@@ -61,8 +62,27 @@
                 <p>Key features include:</p>
                 <ul>
                     <li><strong>ZPM (Zen Package Manager)</strong> - Install apps with simple, elegant commands</li>
-                    <li><strong>Optimized GNOME Desktop</strong> - Beautiful, minimal, and customized interface</li>
+                    <li><strong>Choice of Desktops</strong> - Optimized GNOME or lightweight MATE desktop environments</li>
                     <li><strong>Debian Stable Base</strong> - Rock-solid foundation with security updates</li>
+                </ul>
+            </section>
+
+            <section id="desktops">
+                <h2>Desktop Editions</h2>
+                <p>Zenclora OS comes in two distinct desktop flavors to suit your workflow and hardware preferences.</p>
+
+                <h3>GNOME Edition</h3>
+                <p>The default, modern, and highly polished desktop experience. It is heavily customized to offer a clean, distraction-free environment that looks beautiful out of the box. Ideal for users with modern hardware who prefer a sleek, gesture-driven workflow.</p>
+                <ul>
+                    <li><strong>Features:</strong> Modern aesthetics, fluid animations, custom theming.</li>
+                    <li><strong>Best For:</strong> Modern PCs, laptops with touchpads, users who want a premium feel.</li>
+                </ul>
+
+                <h3>MATE Edition</h3>
+                <p>A lightweight, traditional, and blazing-fast desktop environment. The MATE edition is designed for maximum performance and is deeply integrated with custom Conky setups for real-time system monitoring directly on your desktop.</p>
+                <ul>
+                    <li><strong>Features:</strong> Low resource usage, traditional taskbar workflow, Conky integration.</li>
+                    <li><strong>Best For:</strong> Older hardware, power users who prefer a classic layout, maximizing gaming performance.</li>
                 </ul>
             </section>
 
@@ -116,8 +136,8 @@ sudo zen tools formatusb</code></pre>
                     choice. ZPM handles much of the complexity for you, making the learning curve much gentler.</p>
 
                 <h3>Where can I follow new releases and updates?</h3>
-                <p>Updates and announcements are posted on my <a href="https://www.youtube.com/@linux-tech-channel"
-                        target="_blank">YouTube channel</a> and <a href="https://x.com/root0emir" target="_blank">X
+                <p>Updates and announcements are posted on our <a href="https://www.youtube.com/@nixovena"
+                        target="_blank">YouTube channel</a> and <a href="https://x.com/nixovena" target="_blank">X
                         (Twitter)</a> account.</p>
 
                 <h3>I found a bug. What should I do?</h3>
@@ -210,20 +230,40 @@ zen install gaming-pack      # Lutris, Wine, MangoHud, GameMode</code></pre>
 
                 <h4>Browsers</h4>
                 <pre><code>zen install chrome           # Google Chrome
-zen install librewolf        # LibreWolf 
-zen install brave            # Brave Browser
+zen install brave            # Brave Browser (Stable)
+zen install brave-beta       # Brave Browser (Beta)
+zen install brave-nightly    # Brave Browser (Nightly)
+zen install floorp           # Floorp Browser
 zen install mullvad-browser  # Mullvad Browser</code></pre>
 
                 <h4>AI & Development</h4>
                 <pre><code>zen install windsurf         # Windsurf AI Editor
 zen install antigravity      # Antigravity AI
-zen install ollama           # Run local AI models
+zen install claude           # Claude AI Desktop
 zen install vscode           # Visual Studio Code
-zen install docker           # Docker with Compose</code></pre>
+zen install vscodium         # VSCodium (Telemetry-free)
+zen install sublime-text     # Sublime Text Editor
+zen install docker           # Docker with Compose
+zen install nvidia-docker    # NVIDIA Container Toolkit
+zen install rust             # Rust programming language
+zen install r-project        # R Project for Statistical Computing
+zen install temurbin         # Eclipse Temurin JDK
+zen install ardunio          # Arduino IDE
+
+# Zen AI Toolkit
+zen ai ollama                # Ollama manager
+zen ai toolkit               # Tools for AI developers
+zen ai apichat               # Terminal-based API chat
+zen ai llmstore              # Download & manage offline LLMs</code></pre>
 
                 <h4>Media & Productivity</h4>
                 <pre><code>zen install spotify          # Spotify
+zen install jellyfin         # Jellyfin Media Server
 zen install signal           # Signal Messenger
+zen install teams-for-linux  # Microsoft Teams for Linux
+zen install mattermost       # Mattermost Desktop
+zen install vencord          # Vencord (Discord client mod)
+zen install anydesk          # AnyDesk Remote Desktop
 zen install editor-pack      # GIMP, Krita, Inkscape
 zen install producer-pack    # Ardour, Audacity, LMMS
 zen install office-pack      # LibreOffice suite</code></pre>
@@ -233,10 +273,18 @@ zen install office-pack      # LibreOffice suite</code></pre>
 zen install snap             # Snap package manager
 zen install liquorix         # Liquorix gaming kernel
 zen install nvidia-driver    # NVIDIA proprietary driver
-zen install rust             # Rust via rustup</code></pre>
+zen install waydroid         # Waydroid (Android in Linux)
+zen install virtualbox       # Oracle VM VirtualBox
+zen install winehq           # WineHQ (Run Windows apps)</code></pre>
 
-                <h4>Privacy</h4>
-                <pre><code>zen install mullvad-vpn      # Mullvad VPN client</code></pre>
+                <h4>Privacy & Security</h4>
+                <pre><code>zen install mullvad-vpn      # Mullvad VPN client
+
+# Zen Security Utilities
+zen sec jails                # Manage Firejail sandboxes
+zen sec usbguard             # Simplify USBGuard management
+zen sec checksum             # Verify file checksums easily
+zen sec firewall             # NFTables-based firewall</code></pre>
             </section>
 
             <section id="system">
@@ -295,6 +343,11 @@ zen install rust             # Rust via rustup</code></pre>
                 <p>Fix common APT and dpkg issues:</p>
                 <pre><code>sudo zen system aptfix</code></pre>
                 <p>Checks for locks, broken packages, fixes dependencies, cleans cache, updates package lists.</p>
+
+                <h3>Hostname Configuration</h3>
+                <p>Change your system's hostname effortlessly:</p>
+                <pre><code>sudo zen system hostname</code></pre>
+                <p>Updates both /etc/hostname and /etc/hosts to immediately apply the new computer name without requiring a manual restart of networking services.</p>
             </section>
 
             <section id="tools">
@@ -317,6 +370,17 @@ zen install rust             # Rust via rustup</code></pre>
                 <pre><code>sudo zen tools filemanager</code></pre>
                 <p>Operations: Change permissions (chmod), change ownership (chown), find files, find large files,
                     delete files/directories.</p>
+                <h3>Zenthub (Flatpak Store)</h3>
+                <p>A beautiful CLI-based Flatpak software center with a Python3 Rich interface:</p>
+                <pre><code>zen zenthub</code></pre>
+
+                <h3>Zen ZPT</h3>
+                <p>An APT frontend with a stunning CLI UI and detailed messages for package management:</p>
+                <pre><code>zen zpt</code></pre>
+
+                <h3>Zen Settings</h3>
+                <p>Configure system settings such as language selection:</p>
+                <pre><code>zen settings</code></pre>
             </section>
 
             <section id="zpm-internals">
@@ -383,7 +447,7 @@ zen install rust             # Rust via rustup</code></pre>
                     secure and auditable contribution framework is established.</p>
 
                 <h3>Ownership & Copyright</h3>
-                <p>Zenclora OS is developed and managed by <strong>root0emir</strong>. The project code, build structure
+                <p>Zenclora OS is developed and managed by <strong>Nixovena Labs</strong>. The project code, build structure
                     (releng), and visual assets may not be used in other projects without explicit permission.</p>
 
                 <h3>Official Distribution</h3>
@@ -418,7 +482,7 @@ zen install rust             # Rust via rustup</code></pre>
                 <p>Official Site: <a href="https://zenclora.org" target="_blank">zenclora.org</a></p>
                 <p>YouTube: <a href="https://www.youtube.com/@nixovena"
                         target="_blank">@nixovena</a></p>
-                <p>GitHub Organization: <a href="https://github.com/Zenclora" target="_blank">github.com/Zenclora</a>
+                <p>GitHub Organization: <a href="https://github.com/nixovena" target="_blank">github.com/nixovena</a>
                 </p>
                 <p>SourceForge: <a href="https://sourceforge.net/projects/zenclora/"
                         target="_blank">sourceforge.net/projects/zenclora</a></p>
@@ -435,8 +499,9 @@ zen install rust             # Rust via rustup</code></pre>
                 <span>Zenclora OS</span>
             </div>
             <div class="footer-links">
-                <a href="https://github.com/Zenclora" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/root0emir" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://github.com/nixovena" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/nixovena" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@nixovena" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://sourceforge.net/projects/zenclora/" target="_blank"><i class="fas fa-download"></i></a>
             </div>
             <p>© 2026 Zenclora Linux Project. All rights reserved.</p>
